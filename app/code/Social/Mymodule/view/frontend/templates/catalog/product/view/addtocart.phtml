@@ -1,0 +1,23 @@
+<a data-original-title="" href="javascript:void(0);" onclick="share_fb();"><img src="<?php echo $block->getViewFileUrl('images/facebook_counter.png');?>" title="Facebook"></a>
+<script>
+
+function share_fb() {
+            var width = 626;
+            var height = 436;
+            var yourPageToShare = window.location.href;
+            var sharerUrl = 'shareurl' + encodeURIComponent(yourPageToShare);
+            var l = window.screenX + (window.outerWidth - width) / 2;
+            var t = window.screenY + (window.outerHeight - height) / 2;
+            var winProps = ['width='+width,'height='+height,'left='+l,'top='+t,'status=no','resizable=yes','toolbar=no','menubar=no','scrollbars=yes'].join(',');
+            var win = window.open(sharerUrl, 'fbShareWin', winProps);
+        }
+        </script>
+        <a href="javascript:(
+function(){
+var w=480;var h=380;
+var x=Number((window.screen.width-w)/2);
+var y=Number((window.screen.height-h)/2);
+window.open('https://plus.google.com/share?url='+encodeURIComponent(location.href)+'
+  &amp;title='+encodeURIComponent(document.title),'','width='+w+',height='+h+',left='+x+',top='+y+',
+  scrollbars=no');
+  })();"> <img src="give-share-imge-source-here" width="57" height="20" /></a>

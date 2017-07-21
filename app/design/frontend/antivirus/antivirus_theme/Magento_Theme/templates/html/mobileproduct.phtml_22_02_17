@@ -1,0 +1,91 @@
+<?php
+$categoryId = 9; // fetching products in category id 6
+$categoryProducts = $block->getCategoryProducts($categoryId);
+
+            
+   ?>
+    
+
+
+<div role="tabpanel" class="tab-pane active" id="BestSeller">
+							<div id="owl-demo-3" class="owl-carousel owl-theme">
+								<div class="product-loop-col">
+									<?php
+
+foreach ($categoryProducts as $product) {
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+	$listBlock = $objectManager->get('\Magento\Catalog\Block\Product\ListProduct');
+	$addToCartUrl =  $listBlock->getAddToCartUrl($product);
+
+	$product = $objectManager->create('Magento\Catalog\Model\Product')->load($product->getId());
+	$images = $product->getMediaGalleryImages();
+    $image = $images->getFirstItem();
+     $imageUrl = $image->getUrl(); ?>
+     
+									
+									<div class="product-list-block">
+										
+										<div class="product-wish">
+											
+											<!--<a href=""> <img src="images/product-wish.png" alt=""></a>-->
+											<a href="<?php echo $this->getAddUrl($product) ?>" data-post="<?php  echo $this->helper('Magento\Wishlist\Helper\Data')->getAddParams($product) ?>"class="action towishlist" data-action="add-to-wishlist"><img src="images/product-wish.png" alt=""></a>
+										</div>
+										<div class="product-cart">
+											<!--<a href=""> <img src="images/product-cart.png" alt=""> </a>-->
+											<form data-role="tocart-form" action="<?php echo $addToCartUrl; ?>" method="post"> 
+
+    <?php echo $block->getBlockHtml('formkey')?>
+
+     <button type="submit" title="Add to Cart" class="action1 tocart2 primary3">
+
+       <span><img src="images/product-cart.png" alt=""></span>
+     </button>
+ </form>
+										</div>
+										
+										<div class="product-list-image">
+											<div class="image-effect">
+												<a href="<?php echo $product->getProductUrl(); ?>"><img src="<?php echo $imageUrl; ?>" /></a>
+											</div>
+										</div>
+										<div class="product-list-text">
+											 <a href="<?php echo $product->getProductUrl(); ?>"><?php echo $product->getName(); ?></a>
+										</div>
+										<div class="product-list_price">
+											 <?php echo $product->getPrice(); ?>
+											<?php echo $product->getPriceCode(); ?>
+											 <?php //echo $block->getPrice()->getPriceCode(); ?>
+											 <?php //echo $block->getReviewsSummaryHtml($_product, $templateType); ?>
+                        <?php  //echo "hii".$block->getProductPrice($product) ?>
+										</div>
+									</div>
+	<?php
+    
+}
+
+
+?>								
+									
+									
+								</div>
+								
+							</div>
+							
+						</div>
+
+
+  
+    
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "wishlist": {
+                    "component": "Magento_Wishlist/js/view/wishlist"
+                }
+            }
+        }
+    }
+}
+</script>

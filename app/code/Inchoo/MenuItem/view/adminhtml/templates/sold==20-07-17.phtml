@@ -1,0 +1,73 @@
+<?php 
+
+$_block = $block->getOrders();
+echo '<pre>';
+print_r($_block);
+
+?>
+
+
+
+
+
+<h1><?php echo $this->getHelloWorldTxt1(); ?></h1>
+
+
+<table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Order No</th>
+            <th>Date/time</th>
+            <th>Client Names</th>
+            <th>Client mobile no</th>
+            <th>Client email</th>
+            <th>(SKU)</th>
+            <th>Activation Code</th>
+            <th>Sms status</th>
+            <th>Email status</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Order No</th>
+            <th>Date/time</th>
+            <th>Client Names</th>
+            <th>Client mobile no</th>
+            <th>Client email</th>
+            <th>(SKU)</th>
+            <th>Activation Code</th>
+            <th>Sms status</th>
+            <th>Email status</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        
+        
+        
+        <?php 
+            $productCollection = $block->getProductCollection();
+                foreach ($productCollection as $product) { ?>
+                    <tr>
+                        <td><?=$product->getSku()?></td>
+                        <td><?=$product->getName()?></td>
+                        <td><?=$product->getProductUrl()?></td>
+                        <td><?=$product->getType_id()?></td>
+                        <td><?=$product->getPrice()?></td>
+                        <td><?=$product->getCreated_at()?></td>
+                        <td><?=$product->getImage()?></td>
+                        <td><?=$product->getName()?></td>
+                        <td><?=$product->getName()?></td>
+                    </tr>
+        <?php } ?>
+        
+    </tbody>
+</table>
+
+<script type="text/javascript">
+require(['jquery','dataTables'],function($){
+        $(document).ready(function() {
+             $('#example').DataTable();
+        });
+
+    });
+</script>

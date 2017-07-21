@@ -1,0 +1,46 @@
+
+
+<?php
+$count=0;
+$productCollection = $block->getProductCollection(); ?>
+<?php 
+foreach ($productCollection as $product) {
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+	$product = $objectManager->create('Magento\Catalog\Model\Product')->load($product->getId());
+	$images = $product->getMediaGalleryImages();
+    $image = $images->getFirstItem();
+     $imageUrl = $image->getUrl(); 
+    //print_r($product->getData());  
+    //echo $product->getName(); 
+    //product->getProductUrl()   
+    //echo "<br>";
+    ?>                  <!-- Wrapper for slides -->
+                      <?php if($count==0): ?>
+                            <div class="item active">
+                                <div class="sp-img">
+                                    <img src="<?php echo $imageUrl; ?>" />
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p><?php echo $product->getName(); ?></p>
+                                    <a href="<?php echo $product->getProductUrl(); ?>">Shop Now </a>
+                                </div>
+                            </div>
+                        <?php else: ?>
+                            <div class="item">
+                                <div class="sp-img">
+                                    <img src="<?php echo $imageUrl; ?>" />
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p><?php echo $product->getName(); ?></p>
+                                    <a href="<?php echo $product->getProductUrl(); ?>">Shop Now </a>
+                                </div>
+                            </div>
+                        <?php endif; ?>
+
+                            
+
+  <?php $count++;
+}
+?>

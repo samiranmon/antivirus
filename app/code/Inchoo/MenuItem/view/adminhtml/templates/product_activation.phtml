@@ -1,0 +1,88 @@
+<?php
+
+function getOrderId($_productId = null) { 
+    
+    $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+    $model = $objectManager->create('\Inchoo\MenuItem\Model\OrderCollection');
+    $_orders = $model->getOrderCollection();
+    
+    if ($_orders && count($_orders)) {
+        foreach ($_orders as $_order) {
+            $items = $_order->getAllVisibleItems();
+            foreach ($items as $item) {
+                //$item->getSku();
+                if($item->getProductId() == $_productId) {
+                    return $_order->getIncrementId();
+                    break;
+                } else {
+                    return null;
+                    break;
+                }
+            }
+        }
+    }
+    return null;
+}
+
+?>
+
+<div style="float: right"><a href="<?= $this->getUrl('menuitem/sample/exportcsv', $paramsHere = array()) ?>">Export</a></div>
+
+
+<table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>SKU</th>
+            <th>Activation Code</th>
+            <th>Date/Time</th>
+            <th>Status</th>
+            <th>Order No (for Activation Code Sold )</th>
+            <th>Uploaded By</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>SKU</th>
+            <th>Activation Code</th>
+            <th>Date/Time</th>
+            <th>Status</th>
+            <th>Order No (for Activation Code Sold )</th>
+            <th>Uploaded By</th>
+        </tr>
+    </tfoot>
+    <tbody>
+
+
+
+<?php
+$productCollection = $block->getProductCollection();
+foreach ($productCollection as $product) {
+
+    //echo '<pre>';
+    //print_r($product->getData());
+    ?>
+            <tr>
+                <td><?= $product->getSku() ?></td>
+
+
+                <td><?= $product->getActivationcode() ?></td>
+
+
+                <td><?= $product->getCreated_at() ?></td>
+                <td><?= $product->getQuantity_and_stock_status() > 0 ? 'Available' : 'Sold' ?></td>
+                <td><?=getOrderId($product->getId())?></td>
+                <td>Admin</td>
+            </tr>
+<?php } ?>
+
+    </tbody>
+</table>
+
+<script type="text/javascript">
+    require(['jquery', 'dataTables'], function ($) {
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+
+    });
+</script>

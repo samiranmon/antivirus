@@ -1,0 +1,74 @@
+<!--<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../vendor/magento/framework/Module/etc/module.xsd">	
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
+            <css src="css/styles-m.css" />
+            <css src="css/styles-l.css" />
+            <css src="css/bootstrap.css" />
+            <css src="css/responsive-theme.css" />
+            <css src="css/custom-theme.css" />
+            <css src="css/owl.carousel.css" />
+            <css src="css/owl.theme.default.css" />
+            <css src="css/bootstrap-select.min.css" />
+            <script src="js/jquery-min.js"/>
+            <script src="js/bootstrap.min.js"/>
+            <script src="js/owl.carousel.js"/>
+            <script src="js/custom-script.js"/>
+            <script src="js/bootstrap-select.min.js"/>
+         </head>
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_img_width" xsi:type="number">148</argument> 
+                <argument name="logo_img_height" xsi:type="number">43</argument>
+            </arguments>
+        </referenceBlock>
+        <!--<referenceContainer name="head.additional">
+            <block class="Magento\Framework\View\Element\Template" name="block_name" template="custom_head.phtml" />
+        </referenceContainer>-->
+        <referenceBlock  name="my-account-link" remove="true"/>
+        <referenceBlock  name="wish-list-link"  remove="true" />
+        <referenceContainer name="footer-container" remove="true"/>
+        <referenceBlock name="catalog.compare.link" remove="true"/>
+       <referenceBlock name="register-link">
+            <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Register</argument>
+            </arguments>
+        </referenceBlock>
+        
+        <referenceBlock name="top.links">
+               <!-- Contact us Link -->
+            <block class="Magento\Customer\Block\Account\Link" before="blog">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="false">Shop Reviews</argument>
+                    <!--<argument name="path" xsi:type="string" translate="false">#</argument>-->
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" before="contactus.link" name="blog">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="false">Blog</argument>
+                    <argument name="path" xsi:type="string" translate="false">blog</argument>
+                </arguments>
+            </block>   
+            <block class="Magento\Framework\View\Element\Html\Link" name="contactus.link" before="register-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="false">Contact Us</argument>
+                    <argument name="path" xsi:type="string" translate="false">contact</argument>
+                </arguments>
+            </block>
+         <!-- <block class="Magento\Customer\Block\Account\Link" name="my-account-link">
+            <arguments>
+                <argument name="label" xsi:type="string" translate="true">My Account</argument>
+            </arguments>
+        </block> -->   
+            
+        </referenceBlock>
+      
+        
+    </body>
+     
+<!--      <referenceContainer name="footer-container">
+        <block class="Magento\Theme\Block\Html\Footer" name="custom_block" as="custom_block" template="html/custom.phtml"/>
+      </referenceContainer>-->
+</page>		

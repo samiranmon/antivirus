@@ -1,0 +1,129 @@
+<?php 
+$_orders = $block->getOrderCollection();
+
+/* if ($_orders && count($_orders)) {
+$complete = $pending = $closed = $canceled = $processing = $onHold = 0;
+foreach ($_orders as $_order) {
+    
+    
+     $items = $_order->getAllVisibleItems();
+    foreach ($items as $item) {
+        echo $item->getProductId().'/';
+        echo $item->getSku().'<br>';
+    } 
+    
+    //echo '<pre>';
+    //print_r($_order->getData());
+    
+$label = $_order->getStatusLabel();
+switch ($label) {
+        case 'Complete' : $complete++;
+            break;
+        case 'Pending' : $pending++;
+            break;
+        case 'Processing' : $processing++;
+            break;
+        case 'Canceled' : $canceled++;
+            break;
+        case 'Closed' : $closed++;
+            break;
+    }
+}
+    echo "Order Status <br>";
+    echo "Completed Order " . $complete . "<br>";
+    echo "Pending Order " . $pending . "<br>";
+    echo "Closed Order " . $closed . "<br>";
+    echo "Canceled Order " . $canceled . "<br>";
+    echo "Processing Order" . $processing . "<br>";
+}
+else{
+ echo "You have no Orders";
+} */
+
+
+function getTelephone($customerId = NULL) {
+    $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+    $customerObj = $objectManager->create('Magento\Customer\Model\Customer')->load($customerId);
+    $customerAddress = array();
+
+    foreach ($customerObj->getAddresses() as $address) {
+        $customerAddress[] = $address->toArray();
+    }
+    $_telephone = '';
+    foreach ($customerAddress as $customerAddres) {
+        $_telephone = $customerAddres['telephone'];
+    }
+    return $_telephone;
+}
+?>
+<div style="float: right"><a href="<?=$this->getUrl('menuitem/sample/exportsoldcsv', $paramsHere = array())?>">Export</a></div>
+<table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Order No</th>
+            <th>Date/time</th>
+            <th>Client Names</th>
+            <th>Client mobile no</th>
+            <th>Client email</th>
+            <th>(SKU)</th>
+            <th>Activation Code</th>
+            <th>Sms status</th>
+            <th>Email status</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Order No</th>
+            <th>Date/time</th>
+            <th>Client Names</th>
+            <th>Client mobile no</th>
+            <th>Client email</th>
+            <th>(SKU)</th>
+            <th>Activation Code</th>
+            <th>Sms status</th>
+            <th>Email status</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        
+         <?php 
+            if ($_orders && count($_orders)) {
+                foreach ($_orders as $_order) {
+                    
+                        $items = $_order->getAllVisibleItems();
+                            foreach ($items as $item) {
+                                 $_productId = $item->getProductId();
+                                 $_sku = $item->getSku();
+                                
+                                // for get activation code
+                                $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+                                $product = $objectManager->get('Magento\Catalog\Model\Product')->load($_productId);
+                                $_activationCode = $product->getActivationcode();
+                            }
+                    
+                    ?>
+                    <tr>
+                        <td><?=$_order->getIncrementId()?></td>
+                        <td><?=$_order->getCreatedAt()?></td>
+                        <td><?=$_order->getCustomerFirstname().' '.$_order->getCustomerLastname()?></td>
+                        <td><?=getTelephone($_order->getCustomerId())?></td>
+                        <td><?=$_order->getCustomerEmail()?></td>
+                        <td><?=$_sku?></td>
+                        <td><?=$_activationCode?></td>
+                        <td><?=$_order->getSendEmail()==1?'Yes':'No'?></td>
+                        <td><?=$_order->getSendEmail()==1?'Yes':'No'?></td>
+                    </tr>
+            <?php } } ?>
+        
+        
+    </tbody>
+</table>
+
+<script type="text/javascript">
+require(['jquery','dataTables'],function($){
+        $(document).ready(function() {
+             $('#example').DataTable();
+        });
+
+    });
+</script>

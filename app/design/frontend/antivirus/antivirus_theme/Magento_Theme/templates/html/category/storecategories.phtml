@@ -1,0 +1,75 @@
+<?php
+$categories = $this->getStoreCategories(true,false,true);
+$categoryHelper = $this->getCategoryHelper();
+?>
+
+
+<div class="panel-group" id="accordion">
+<?php
+$count=1;
+foreach($categories as $category):
+     if (!$category->getIsActive()) {
+        continue;
+     }
+?>
+<?php if($count==1):?>
+    <div class="panel panel-default active">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+              <a href="#"></a><span data-toggle="collapse" data-parent="#accordion" href="#<?php echo $category->getId(); ?>">
+              <i class="fa fa-caret-right"></i> <?php echo $category->getName(); ?> 
+            </span>
+          </h4>
+        </div>
+        <div id="<?php echo $category->getId(); ?>" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <ul>
+                       <?php  
+                if($childrenCategories = $this->getChildCategories($category)):?>
+                <?php
+                foreach($childrenCategories as $childrenCategory):
+                     if (!$childrenCategory->getIsActive()) {
+                        continue;
+                     }
+                ?>
+            
+             <li><a href="<?php echo $categoryHelper->getCategoryUrl($childrenCategory) ?>"><?php echo $childrenCategory->getName() ?></a></li>
+            
+             <?php endforeach; endif;?>
+            </ul>
+             </div>
+        </div>
+    </div>
+<?php else:?>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+              <a href="#"></a><span data-toggle="collapse" data-parent="#accordion" href="#<?php echo $category->getId(); ?>">
+              <i class="fa fa-caret-right"></i> <?php echo $category->getName(); ?> 
+            </span>
+          </h4>
+        </div>
+        <div id="<?php echo $category->getId(); ?>" class="panel-collapse collapse ">
+            <div class="panel-body">
+                <ul>
+                       <?php  
+                if($childrenCategories = $this->getChildCategories($category)):?>
+                <?php
+                foreach($childrenCategories as $childrenCategory):
+                     if (!$childrenCategory->getIsActive()) {
+                        continue;
+                     }
+                ?>
+            
+             <li><a href="<?php echo $categoryHelper->getCategoryUrl($childrenCategory) ?>"><?php echo $childrenCategory->getName() ?></a></li>
+           
+             <?php endforeach; endif;?>
+                </ul>
+              </div>
+           
+        </div>
+    </div>
+ <?php endif; $count++;?>     
+<?php endforeach; ?>
+</div>
+ 

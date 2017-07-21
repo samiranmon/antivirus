@@ -1,0 +1,38 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    
+    <head>
+        <!-- Add local resources -->
+        <!--<css src="css/my-styles.css"/>-->
+
+        <!-- The following two ways to add local JavaScript files are equal -->
+<!--        <script src="Magento_Catalog::js/sample1.js"/>
+        <link src="js/sample.js"/>-->
+
+        <!-- Add external resources -->
+        
+<!--        <css src="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" src_type="url" />
+        <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js" src_type="url" />-->
+        
+        <!--<css src="Inchoo_MenuItem::css/jquery.dataTables.min.css" src_type="url" />-->
+         <css src="Inchoo_MenuItem::css/jquery.dataTables.min.css"/>
+        <script src="Inchoo_MenuItem::js/dataTables.js"/>
+        
+    </head>
+    
+    <body>
+        <referenceContainer name="content">
+            <block class="Inchoo\MenuItem\Block\SoldBlock" name="SoldBlock" template="sold.phtml" />
+            <!--<block class="Inchoo\MenuItem\Block\ActivationCodes" name="ActivationCodes" template="helloworld.phtml" />-->
+        </referenceContainer>
+    </body>
+    
+    
+<!--    <update handle="styles"/>
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="menuitem_activation_listing"/>
+        </referenceContainer>
+    </body>-->
+    
+    
+</page>

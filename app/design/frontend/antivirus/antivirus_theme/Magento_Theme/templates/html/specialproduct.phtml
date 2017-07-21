@@ -1,0 +1,29 @@
+
+
+<?php
+$productCollection = $block->getProductCollection();
+foreach ($productCollection as $product) {
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+	$product = $objectManager->create('Magento\Catalog\Model\Product')->load($product->getId());
+	$images = $product->getMediaGalleryImages();
+    $image = $images->getFirstItem();
+     $imageUrl = $image->getUrl(); 
+    //print_r($product->getData());  
+    //echo $product->getName(); 
+    //product->getProductUrl()   
+    //echo "<br>";
+    ?>
+    <div>
+                                <div class="sp-img">
+                                    <img src="<?php echo $imageUrl; ?>" />
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p><?php echo $product->getName(); ?></p>
+                                    <a href="<?php echo $product->getProductUrl(); ?>">Shop Now </a>
+                                </div>
+                            </div>
+
+  <?php
+}
+?>

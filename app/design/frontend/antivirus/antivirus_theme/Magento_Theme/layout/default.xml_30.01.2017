@@ -1,0 +1,41 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<css src="css/bootstrap.css"/>
+        <css src="css/responsive-theme.css"/>
+        <css src="css/custom-theme.css"/>
+        <css src="css/css/owl.carousel.css"/>
+        <css src="css/owl.theme.default.css"/>
+        <css src="css/bootstrap-select.min.css"/>
+        <css src="css/styles-m.css"/>
+        <css src="css/styles-l.css" media="screen and (min-width: 768px)"/>
+        <css src="css/print.css" media="print"/>
+        <script src="js/bootstrap.min.js"/>
+        <script src="js/owl.carousel.js"/>
+        <script src="js/custom-script.js"/>
+        <script src="js/bootstrap-select.min.js"/>
+    </head>
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_img_width" xsi:type="number">148</argument> 
+                <argument name="logo_img_height" xsi:type="number">43</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceContainer name="head.additional">
+            <block class="Magento\Framework\View\Element\Template" name="block_name" template="custom_head.phtml" />
+        </referenceContainer>
+        <referenceBlock  name="my-account-link" remove="true"/>
+        <referenceBlock  name="wish-list-link"  remove="true" />
+       <referenceBlock name="register-link">
+            <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Register</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="login.links">
+            <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Login</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>		

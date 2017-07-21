@@ -1,0 +1,462 @@
+
+
+<div class="tab-container-box">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#best-brand" aria-controls="best-brand" role="tab" data-toggle="tab">BestSeller Brands</a>
+                </li>
+                <li role="presentation">
+                    <a href="#trending-now" aria-controls="trending-now" role="tab" data-toggle="tab">Trending Now</a>
+                </li>
+                
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                
+                <?php //echo $this->getLayout()->createBlock('Ves\Brand\Block\BrandList')->setTemplate('Ves_Brand::block/brand_list_bestslider.phtml')->toHtml(); 
+                ?>
+          
+          
+
+               
+               <div role="tabpanel" class="tab-pane active" id="best-brand">
+
+              <?php echo $this->getLayout()->createBlock('Ves\Brand\Block\BrandList')->setTemplate('Ves_Brand::block/brand_list_bestslider.phtml')->toHtml(); 
+                ?>
+                      <!--<div id="owl-demo-bt" class="owl-carousel owl-theme">
+                        <div> 
+
+					<div class="tab-img-section"> <img src="images/tab-img-01.jpg" alt=""> </div>
+					<div class="tab-img-section"> <img src="images/tab-img-02.jpg" alt=""> </div>
+					<div class="tab-img-section"> <img src="images/tab-img-03.jpg" alt=""> </div>
+					<div class="tab-img-section"> <img src="images/tab-img-04.jpg" alt=""> </div>
+					<div class="tab-img-section"> <img src="images/tab-img-05.jpg" alt=""> </div>
+					<div class="tab-img-section"> <img src="images/tab-img-06.jpg" alt=""> </div>
+					<div class="tab-img-section"> <img src="images/tab-img-07.jpg" alt=""> </div>
+					<div class="tab-img-section"> <img src="images/tab-img-08.jpg" alt=""> </div>
+					
+                     </div>
+
+                     <div>
+
+                    
+                    <div class="tab-img-section"> <img src="images/tab-img-09.jpg" alt=""> </div>
+                    <div class="tab-img-section"> <img src="images/tab-img-10.jpg" alt=""> </div>
+                    <div class="tab-img-section"> <img src="images/tab-img-11.jpg" alt=""> </div>
+                    <div class="tab-img-section"> <img src="images/tab-img-12.jpg" alt=""> </div>
+                    <div class="tab-img-section"> <img src="images/tab-img-13.jpg" alt=""> </div>
+                    <div class="tab-img-section"> <img src="images/tab-img-14.jpg" alt=""> </div>
+                    <div class="tab-img-section"> <img src="images/tab-img-15.jpg" alt=""> </div>
+                    <div class="tab-img-section"> <img src="images/tab-img-16.jpg" alt=""> </div>
+                     </div>
+                </div>-->
+
+				</div>
+                <div role="tabpanel" class="tab-pane" id="trending-now">
+                    
+					
+                <?php echo $this->getLayout()->createBlock('Ves\Brand\Block\BrandList')->setTemplate('Ves_Brand::block/brand_list_trading.phtml')->toHtml(); 
+                          ?>
+
+                  
+                </div>
+            </div>
+            
+        </div>
+        <!--special-product-->
+        <div class="special-products">
+            <div class="row">
+                <div class="col-sm-3 home-page-padding-left">
+                    
+                    <div class="special-products-left">
+                        <h2>Special Products</h2>
+                        <div class="save-sp">
+                            <div class="save-50">
+                                <img src="images/save-50.png" alt="">
+                            </div>
+                        </div>
+                        
+                      <div id="owl-demo-2" class="owl-carousel owl-theme">
+
+                         <?php  echo $this->getLayout()->createBlock("Brainium\SpecialProduct\Block\SpecialProduct")->setTemplate("Magento_Theme::html/specialproduct.phtml")->toHtml(); ?>   
+                    <!-- <div>
+                                <div class="sp-img">
+                                    <img src="images/sp-product-img.png" alt="">
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p>F-Secure Mobile Security <br>
+                                    1 user 1 year</p>
+                                    <a href="">Shop Now </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sp-img">
+                                    <img src="images/sp-product-img.png" alt="">
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p>F-Secure Mobile Security <br>
+                                    1 user 1 year</p>
+                                    <a href="">Shop Now </a>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 home-page-padding-right">
+                    
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#BestSeller" aria-controls="BestSeller" role="tab" data-toggle="tab">BestSeller</a>
+                        </li>
+                        <li role="presentation">
+                            <!--<a href="#more-reviews" aria-controls="more-reviews" role="tab" data-toggle="tab">More Reviews</a>-->
+                        </li>
+                        
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-label-name">
+                        <h3>Mobile Products</h3>
+                    </div>
+
+                    <div class="tab-content">
+                        
+                       
+<?php  echo $this->getLayout()->createBlock("Brainium\MobileProduct\Block\MobileProduct")->setTemplate("Magento_Theme::html/mobileproduct.phtml")->toHtml(); ?>                     
+
+
+          
+          
+
+                        <div role="tabpanel" class="tab-pane" id="more-reviews">
+                            <h1>NO PRODUCTS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--special-product-end-->
+        <!--Cms block for webroot hemepage sliding-->
+        <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('webroot')->toHtml();?>
+
+
+<!--special-product-->
+        <div class="special-products">
+            <div class="row">
+                <div class="col-sm-3 home-page-padding-left">
+                    <div class="special-products-left sp-bg-color">
+                        <h2>Special Products</h2>
+                        <div class="save-sp">
+                            <div class="save-50">
+                                <img src="images/save-50.png" alt="">
+                            </div>
+                        </div>
+                        <div id="owl-demo-4" class="owl-carousel owl-theme">
+                        <?php  echo $this->getLayout()->createBlock("Brainium\SpecialProduct\Block\SpecialProduct")->setTemplate("Magento_Theme::html/specialproduct.phtml")->toHtml(); ?>
+                    </div>
+                        <!--<div id="owl-demo-4" class="owl-carousel owl-theme">
+                            <div>
+                                <div class="sp-img">
+                                    <img src="images/sp-product-img.png" alt="">
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p>F-Secure Mobile Security <br>
+                                    1 user 1 year</p>
+                                    <a href="">Shop Now </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sp-img">
+                                    <img src="images/sp-product-img.png" alt="">
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p>F-Secure Mobile Security <br>
+                                    1 user 1 year</p>
+                                    <a href="">Shop Now </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sp-img">
+                                    <img src="images/sp-product-img.png" alt="">
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p>F-Secure Mobile Security <br>
+                                    1 user 1 year</p>
+                                    <a href="">Shop Now </a>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="col-sm-9 home-page-padding-right">
+                    
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#BestSeller2" aria-controls="BestSeller2" role="tab" data-toggle="tab">BestSeller</a>
+                        </li>
+                        <li role="presentation">
+                           <!-- <a href="#more-reviews2" aria-controls="more-reviews2" role="tab" data-toggle="tab">More Reviews</a>-->
+                        </li>
+                        
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-label-name">
+                        <h3>NEW Products</h3>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="BestSeller2">
+                            <div id="owl-demo-5" class="owl-carousel owl-theme">
+                                <div class="product-loop-col">
+                                    <?php  echo $this->getLayout()->createBlock("Magento\Catalog\Block\Product\Widget\NewWidget")->setDisplayType("all_products")->setProductsCount("8")->setTemplate("product/widget/new/content/new_grid.phtml")->toHtml(); ?>
+
+                              
+                                    
+                                   
+                                    
+                                </div>
+                                <div class="product-loop-col">
+                                    
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Panda Security Switzerland
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            ESET Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $50
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            F-Secure Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $60
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            F-Secure Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img05.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Quick Heal Mobile Security
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img06.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Mobile security, Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $65
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img07.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Najlepszy Program Antywirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img08.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Norton Anti-Virus Software
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="more-reviews2">
+                            <h1>NO PRODUCTS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--special-product-end-->
+
+
+        <!--windows-8 home page sliding cms block-->
+        <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('windows')->toHtml();?>
+       
+        <div class="from-the-blog">
+            
+            <div class="row">
+                <div class="col-sm-12">
+            <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('fromtheblog')->toHtml();?>
+        </div>
+            </div>
+        </div>
+        <div class="brand-img-block">
+             <?php echo $this->getLayout()->createBlock('Ves\Brand\Block\BrandList')->setTemplate('Ves_Brand::block/brand_list_footer.phtml')->toHtml(); 
+                          ?>
+            <!-- <div id="brand-owl" class="owl-carousel owl-theme">
+                
+               
+                <div>
+                    <img src="images/brand-img-01.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-02.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-03.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-04.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-05.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-06.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-01.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-02.png" alt="">
+                </div>
+                
+            </div>-->
+            
+        </div>
+ 

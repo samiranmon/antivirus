@@ -1,0 +1,118 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+
+/**
+*  General template for displaying group of blocks devided into sections
+*/
+
+$group = $block->getGroupName();
+$groupCss = $block->getGroupCss();
+$groupBehavior = $block->getGroupBehaviour() ? $block->getGroupBehaviour() : '{"tabs":{"openedState":"active"}}';
+?>
+<?php if ($detailedInfoGroup = $block->getGroupChildNames($group, 'getChildHtml')):?>
+    <div class="sections <?php /* @escapeNotVerified */ echo $groupCss ?>">
+        <?php $layout = $block->getLayout(); ?>
+        <div class="section-items <?php /* @escapeNotVerified */ echo $groupCss ?>-items" data-mage-init='<?php /* @escapeNotVerified */ echo $groupBehavior ?>'>
+            <?php foreach ($detailedInfoGroup as $name):?>
+                <?php
+                    $html = $layout->renderElement($name);
+                    if (!trim($html) && ($block->getUseForce() != true)) {
+                        continue;
+                    }
+                    $alias = $layout->getElementAlias($name);
+                    $label = $block->getChildData($alias, 'title');
+                ?>
+                <div class="section-item-title <?php /* @escapeNotVerified */ echo $groupCss ?>-item-title" data-role="collapsible">
+                    <a class="<?php /* @escapeNotVerified */ echo $groupCss ?>-item-switch" data-toggle="switch" href="#<?php /* @escapeNotVerified */ echo $alias; ?>"><?php /* @escapeNotVerified */ echo $label; ?></a>
+                </div>
+                <div class="section-item-content <?php /* @escapeNotVerified */ echo $groupCss ?>-item-content" id="<?php /* @escapeNotVerified */ echo $alias; ?>" data-role="content"><?php /* @escapeNotVerified */ echo $html; ?></div>
+            <?php endforeach;?>
+        </div>
+    </div>
+
+<?php endif; ?>
+<?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$request = $objectManager->get('Magento\Framework\App\Action\Context')->getRequest();
+if ($request->getFullActionName() == 'cms_index_index') { ?>
+<?php echo ""; ?>
+
+ <?php } else { ?> 
+ <div class="container">
+    <div class="row">
+ <div class="col-sm-3 home-ico">
+ <div class="tittle-pannel">
+                <h2><a href="http://mydevmagento.com/rajiv/antivirus/<?php //echo $baseUrl = $currentStore->getBaseUrl(); ?>" >Home<span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></h2>
+            </div>
+       </div> 
+       </div>
+  </div>
+           
+
+ <?php } ?>
+           
+<?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$request = $objectManager->get('Magento\Framework\App\Action\Context')->getRequest();
+if ($request->getFullActionName() == 'cms_index_index'):?>
+
+<div class="banner-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+
+            <div class="tittle-pannel">
+                <h2>Categories</h2>
+            </div>
+                          
+                
+                    
+
+<?php  echo $this->getLayout()->createBlock("Brainium\CategoriesSide\Block\CategoriesSide")->setTemplate("Magento_Theme::html/category/storecategories.phtml")->toHtml(); ?>
+   
+
+
+            </div>
+            <div class="col-sm-9">
+                
+                <div class="banner-place">
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <?php echo $this->getLayout()->createBlock("Magestore\Bannerslider\Block\SliderItem")->setSliderId(4)->toHtml(); ?>
+                     <!-- <div>
+                            <div class="banner-img">
+                                 <img src="<?php echo $this->getViewFileUrl('images/banner-img-01.png'); ?>" alt="">
+                               <?php  //echo  $this->getLayout()->createBlock("Magestore\Bannerslider\Block\SliderItem")->setSliderId(1)->toHtml(); ?>
+                            </div>
+                            <div class="banner-text banner-t-1">
+                                <h2>Be secure</h2>
+                                <h3>anywhere all-time</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="banner-img">
+                                <img src="<?php echo $this->getViewFileUrl('images/banner-img-01.png'); ?>" alt="">
+                            </div>
+                            <div class="banner-text banner-t-1">
+                                <h2>Be secure</h2>
+                                <h3>anywhere all-time</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut</p>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php endif; ?>
+

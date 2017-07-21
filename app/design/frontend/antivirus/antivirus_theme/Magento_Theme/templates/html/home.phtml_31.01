@@ -1,0 +1,1212 @@
+<div class="banner-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+
+            <div class="tittle-pannel">
+                <h2>Categories</h2>
+            </div>
+                          
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Antivirus
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.  
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Microsoft Office
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         Office Applications
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+      </div>
+    </div>
+  </div>
+
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree1">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+         Adobe
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree1">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree2">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+        Microsoft Windows
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree2">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree3">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+        Other Software
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree3">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree4">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+         Corporate Sales
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree4">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree5">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+         Other Categories
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree5">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+            </div>
+            <div class="col-sm-9">
+                
+                <div class="banner-place">
+                    <!--<div id="owl-demo1" class="owl-carousel owl-theme">-->
+                        
+                       <?php  echo  $this->getLayout()->createBlock("Magestore\Bannerslider\Block\SliderItem")->setSliderId(1)->toHtml(); ?>
+
+
+                        
+                       <!-- <div>
+                            <div class="banner-img">
+                                <img src="images/banner-img-01.png" alt="">
+                            </div>
+                            <div class="banner-text banner-t-1">
+                                <h2>Be secure</h2>
+                                <h3>anywhere all-time</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="banner-img">
+                                <img src="images/banner-img-01.png" alt="">
+                            </div>
+                            <div class="banner-text banner-t-1">
+                                <h2>Be secure</h2>
+                                <h3>anywhere all-time</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut</p>
+                            </div>
+                        </div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<main id="maincontent" class="page-main">
+<div class="columns">
+    <div class="column main">
+        <div class="tab-container-box">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#best-brand" aria-controls="best-brand" role="tab" data-toggle="tab">BestSeller Brands</a>
+                </li>
+                <li role="presentation">
+                    <a href="#trending-now" aria-controls="trending-now" role="tab" data-toggle="tab">Trending Now</a>
+                </li>
+                
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('brand')->toHtml();?>
+
+               <!-- <div role="tabpanel" class="tab-pane active" id="best-brand">
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-01.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-02.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                    <div class="tab-img-section"> <img src="<?php echo $this->getViewFileUrl('images/tab-img-03.jpg'); ?>" alt=""> </div>
+                </div>-->
+                <div role="tabpanel" class="tab-pane" id="trending-now">...</div>
+            </div>
+            
+        </div>
+        <!--special-product-->
+        <div class="special-products">
+            <div class="row">
+                <div class="col-sm-3">
+                    <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('sidebarcategories')->toHtml();?>
+                    <div class="special-products-left">
+                        <h2>Special Products</h2>
+                        <div class="save-sp">
+                            <div class="save-50">
+                                <img src="images/save-50.png" alt="">
+                            </div>
+                        </div>
+                        <div id="owl-demo-2" class="owl-carousel owl-theme">
+                            <div>
+                                <div class="sp-img">
+                                    <img src="images/sp-product-img.png" alt="">
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p>F-Secure Mobile Security <br>
+                                    1 user 1 year</p>
+                                    <a href="">Shop Now </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sp-img">
+                                    <img src="images/sp-product-img.png" alt="">
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p>F-Secure Mobile Security <br>
+                                    1 user 1 year</p>
+                                    <a href="">Shop Now </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sp-img">
+                                    <img src="images/sp-product-img.png" alt="">
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p>F-Secure Mobile Security <br>
+                                    1 user 1 year</p>
+                                    <a href="">Shop Now </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#BestSeller" aria-controls="BestSeller" role="tab" data-toggle="tab">BestSeller</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#more-reviews" aria-controls="more-reviews" role="tab" data-toggle="tab">More Reviews</a>
+                        </li>
+                        
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-label-name">
+                        <h3>Mobile Products</h3>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="BestSeller">
+                            <div id="owl-demo-3" class="owl-carousel owl-theme">
+                                <div class="product-loop-col">
+                                    
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Panda Security Switzerland
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            ESET Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $50
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            F-Secure Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $60
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            F-Secure Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img05.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Quick Heal Mobile Security
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img06.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Mobile security, Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $65
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img07.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Najlepszy Program Antywirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img08.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Norton Anti-Virus Software
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="product-loop-col">
+                                    
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Panda Security Switzerland
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            ESET Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $50
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            F-Secure Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $60
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            F-Secure Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img05.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Quick Heal Mobile Security
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img06.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Mobile security, Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $65
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img07.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Najlepszy Program Antywirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img08.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Norton Anti-Virus Software
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="more-reviews">
+                            <h1>NO PRODUCTS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--special-product-end-->
+        <div class="webroot-moobile">
+            <div class="webroot-img">
+                
+                <img src="images/web-root-banner.png" alt="">
+            </div>
+            <div class="webroot-text">
+                <h2>Webroot <span>Mobile Security </span></h2>
+                <p>Smart security for your android phone and tablet.</p>
+                <a href="">Download Now</a>
+            </div>
+        </div>
+
+
+<!--special-product-->
+        <div class="special-products">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="special-products-left sp-bg-color">
+                        <h2>Special Products</h2>
+                        <div class="save-sp">
+                            <div class="save-50">
+                                <img src="images/save-50.png" alt="">
+                            </div>
+                        </div>
+                        <div id="owl-demo-4" class="owl-carousel owl-theme">
+                            <div>
+                                <div class="sp-img">
+                                    <img src="images/sp-product-img.png" alt="">
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p>F-Secure Mobile Security <br>
+                                    1 user 1 year</p>
+                                    <a href="">Shop Now </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sp-img">
+                                    <img src="images/sp-product-img.png" alt="">
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p>F-Secure Mobile Security <br>
+                                    1 user 1 year</p>
+                                    <a href="">Shop Now </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sp-img">
+                                    <img src="images/sp-product-img.png" alt="">
+                                </div>
+                                <div class="sp-text sp-t-1">
+                                    
+                                    <p>F-Secure Mobile Security <br>
+                                    1 user 1 year</p>
+                                    <a href="">Shop Now </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#BestSeller2" aria-controls="BestSeller2" role="tab" data-toggle="tab">BestSeller</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#more-reviews2" aria-controls="more-reviews2" role="tab" data-toggle="tab">More Reviews</a>
+                        </li>
+                        
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-label-name">
+                        <h3>NEW Products</h3>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="BestSeller2">
+                            <div id="owl-demo-5" class="owl-carousel owl-theme">
+                                <div class="product-loop-col">
+                                    <?php  echo $this->getLayout()->createBlock("Magento\Catalog\Block\Product\Widget\NewWidget")->setDisplayType("all_products")->setProductsCount("8")->setTemplate("product/widget/new/content/new_grid.phtml")->toHtml(); ?>
+
+
+                                    
+                                   <!-- <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Panda Security Switzerland
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>-->
+                                   <!-- <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            ESET Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $50
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            F-Secure Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $60
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            F-Secure Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img05.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Quick Heal Mobile Security
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img06.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Mobile security, Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $65
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img07.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Najlepszy Program Antywirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img08.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Norton Anti-Virus Software
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>-->
+                                    
+                                </div>
+                                <div class="product-loop-col">
+                                    
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Panda Security Switzerland
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            ESET Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $50
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            F-Secure Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $60
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            F-Secure Mobile Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img05.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Quick Heal Mobile Security
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img06.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Mobile security, Antivirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $65
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img07.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Najlepszy Program Antywirus
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    <div class="product-list-block">
+                                        
+                                        <div class="product-wish">
+                                            
+                                            <a href=""> <img src="images/product-wish.png" alt=""></a>
+                                        </div>
+                                        <div class="product-cart">
+                                            <a href=""> <img src="images/product-cart.png" alt=""> </a>
+                                        </div>
+                                        
+                                        <div class="product-list-image">
+                                            <div class="image-effect">
+                                                <img src="images/best-seller-img08.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-list-text">
+                                            Norton Anti-Virus Software
+                                        </div>
+                                        <div class="product-list_price">
+                                            $45
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="more-reviews2">
+                            <h1>NO PRODUCTS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--special-product-end-->
+
+
+        <!--windows-8-->
+        <div class="windows-8">
+            <div class="windows-8-img">
+                <img src="images/window-8-bg.png" alt="">
+            </div>
+            <div class="windows-8-text">
+                <h2><span>Windows 8 </span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                <a href="">Download Now</a>
+            </div>
+        </div>
+        <div class="from-the-blog">
+            <h2>From The Blog</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="ftb-block">
+                        <div class="ftb-img">
+                            <div class="image-effect">
+                                <img src="images/ftb-img-01.png" alt="">
+                            </div>
+                            
+                            <div class="ftb-block-date">
+                                <div class="date-d">24</div>
+                                <div class="date-l">|</div>
+                                <div class="date-y">Dec</div>
+                            </div>
+                        </div>
+                        <div class="ftb-heading">Lorem ipsum dolor sit amet</div>
+                        <div class="ftb-text">Lorem ipsum dolor sit amet, consecteturadipiscig elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <div class="ftb-readmore">
+                            <a href="">Read More <span> > </span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="ftb-block">
+                        <div class="ftb-img">
+                            <div class="image-effect">
+                                <img src="images/ftb-img-02.png" alt="">
+                            </div>
+                            
+                            <div class="ftb-block-date">
+                                <div class="date-d">24</div>
+                                <div class="date-l">|</div>
+                                <div class="date-y">Dec</div>
+                            </div>
+                        </div>
+                        <div class="ftb-heading">Lorem ipsum dolor sit amet</div>
+                        <div class="ftb-text">Lorem ipsum dolor sit amet, consecteturadipiscig elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <div class="ftb-readmore">
+                            <a href="">Read More <span> > </span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="ftb-block">
+                        <div class="ftb-img">
+                            <div class="image-effect">
+                                <img src="images/ftb-img-03.png" alt="">
+                            </div>
+                            
+                            <div class="ftb-block-date">
+                                <div class="date-d">24</div>
+                                <div class="date-l">|</div>
+                                <div class="date-y">Dec</div>
+                            </div>
+                        </div>
+                        <div class="ftb-heading">Lorem ipsum dolor sit amet</div>
+                        <div class="ftb-text">Lorem ipsum dolor sit amet, consecteturadipiscig elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <div class="ftb-readmore">
+                            <a href="">Read More <span> > </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand-img-block">
+            <div id="brand-owl" class="owl-carousel owl-theme">
+                <div>
+                    <img src="images/brand-img-01.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-02.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-03.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-04.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-05.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-06.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-01.png" alt="">
+                </div>
+                <div>
+                    <img src="images/brand-img-02.png" alt="">
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+</main>

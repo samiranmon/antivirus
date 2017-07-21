@@ -1,0 +1,87 @@
+<!--<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+ 
+    
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#1" aria-expanded="true" aria-controls="collapseOne">
+          Antivirus
+        </a>
+      </h4>
+    </div>
+    <div id="1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.  
+      </div>
+    </div>
+  </div>
+ 
+    
+    
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#2" aria-expanded="false" aria-controls="collapseTwo">
+          Microsoft Office
+        </a>
+      </h4>
+    </div>
+    <div id="2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+      </div>
+    </div>
+  </div>
+ 
+
+</div>-->
+
+
+
+
+<?php
+$categories = $this->getStoreCategories(true,false,true);
+$categoryHelper = $this->getCategoryHelper();
+?>
+
+
+
+<?php
+foreach($categories as $category):
+     if (!$category->getIsActive()) {
+        continue;
+     }
+?>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+ <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="<?php echo $category->getName();?>">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#<?php echo $category->getId(); ?>" aria-expanded="false" aria-controls="collapse<?php echo $category->getId(); ?>">
+          <?php echo $category->getName();?>
+            
+        </a>
+      </h4>
+    </div>
+
+      <div id="<?php echo $category->getId(); ?>" class="panel-collapse collapse in" role="tabpanel"  aria-labelledby="<?php echo $category->getName();?>">
+             <?php  
+if($childrenCategories = $this->getChildCategories($category)):
+?><?php
+foreach($childrenCategories as $childrenCategory):
+     if (!$childrenCategory->getIsActive()) {
+        continue;
+     }
+?>
+          <div class="panel-body">
+           <li><a href="<?php echo $categoryHelper->getCategoryUrl($childrenCategory) ?>"><?php echo $childrenCategory->getName() ?></a></li>
+        </div>
+           <?php endforeach; ?>
+      </div>
+    
+     
+    </div>
+</div>
+<?php
+endif;
+endforeach;
+?>
