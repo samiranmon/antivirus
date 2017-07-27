@@ -11,7 +11,9 @@ class OrderCollection extends \Magento\Framework\View\Element\Template {
     protected $orders;
 
     public function __construct(
-    \Magento\Framework\View\Element\Template\Context $context, \Magento\Sales\Model\ResourceModel\Order\CollectionFactory $orderCollectionFactory, array $data = []
+    \Magento\Framework\View\Element\Template\Context $context, 
+            \Magento\Sales\Model\ResourceModel\Order\CollectionFactory $orderCollectionFactory,
+            array $data = []
     ) {
         $this->_orderCollectionFactory = $orderCollectionFactory;
         parent::__construct($context, $data);

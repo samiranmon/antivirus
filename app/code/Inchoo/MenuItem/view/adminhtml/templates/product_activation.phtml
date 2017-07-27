@@ -33,6 +33,7 @@ function getOrderId($_productId = null) {
     <thead>
         <tr>
             <th>SKU</th>
+            <th>Category</th>
             <th>Activation Code</th>
             <th>Date/Time</th>
             <th>Status</th>
@@ -43,6 +44,7 @@ function getOrderId($_productId = null) {
     <tfoot>
         <tr>
             <th>SKU</th>
+            <th>Category</th>
             <th>Activation Code</th>
             <th>Date/Time</th>
             <th>Status</th>
@@ -55,14 +57,30 @@ function getOrderId($_productId = null) {
 
 
 <?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+
 $productCollection = $block->getProductCollection();
 foreach ($productCollection as $product) {
-
+    
+    $categoryCollection = $product->getCategoryCollection();
+    //echo count($categoryCollection);
     //echo '<pre>';
-    //print_r($product->getData());
+    //print_r($product);
     ?>
             <tr>
                 <td><?= $product->getSku() ?></td>
+                
+                <td>
+                    <?php
+                         if(count($categoryCollection) > 0) {
+                             $_catName = '~/';
+                                foreach ($categoryCollection as $category){
+                                    $_cat = $objectManager->create('Magento\Catalog\Model\Category')->load($category->getId());
+                                    $_catName .= $_cat->getName().'/';
+                                } echo $_catName;
+                            }
+                    ?>
+                </td>
 
 
                 <td><?= $product->getActivationcode() ?></td>
@@ -71,7 +89,7 @@ foreach ($productCollection as $product) {
                 <td><?= $product->getCreated_at() ?></td>
                 <td><?= $product->getQuantity_and_stock_status() > 0 ? 'Available' : 'Sold' ?></td>
                 <td><?=getOrderId($product->getId())?></td>
-                <td>Admin</td>
+                <td>Admin <?= $product->getCategoryId() ?></td>
             </tr>
 <?php } ?>
 
