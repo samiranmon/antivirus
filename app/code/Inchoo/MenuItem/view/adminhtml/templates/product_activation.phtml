@@ -89,7 +89,7 @@ foreach ($productCollection as $product) {
                 <td><?= $product->getCreated_at() ?></td>
                 <td><?= $product->getQuantity_and_stock_status() > 0 ? 'Available' : 'Sold' ?></td>
                 <td><?=getOrderId($product->getId())?></td>
-                <td>Admin <?= $product->getCategoryId() ?></td>
+                <td>Admin</td>
             </tr>
 <?php } ?>
 

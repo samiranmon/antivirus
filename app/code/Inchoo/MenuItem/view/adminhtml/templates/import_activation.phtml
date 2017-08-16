@@ -1,0 +1,101 @@
+<?php
+$objectManager =   \Magento\Framework\App\ObjectManager::getInstance();
+$connection = $objectManager->get('Magento\Framework\App\ResourceConnection')->getConnection('\Magento\Framework\App\ResourceConnection::DEFAULT_CONNECTION'); 
+$_collection = $connection->fetchAll("SELECT * FROM activation_code");
+
+//echo $block->getHelloWorldTxt();
+
+    $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+    $FormKey = $objectManager->get('Magento\Framework\Data\Form\FormKey'); 
+?>
+
+<div style="float: right; padding-bottom: 20px;">
+    <form  data-mage-init='{"validation": {}}' action="<?= $this->getUrl('menuitem/sample/importcsv', $paramsHere = array()) ?>" method="post" enctype="multipart/form-data" id="importFrm">
+        <input type="file" name="file" data-validate="{required:true}" required accept=".csv"  />
+        <input name="form_key" type="hidden" value="<?php /* @escapeNotVerified */ echo $FormKey->getFormKey() ?>" />
+         <a href="javascript:void(0);" onclick="document.getElementById('importFrm').submit();" >Import</a>
+    </form>
+</div>
+
+
+<table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>#ID</th>
+            <th>SKU</th>
+            <th>Activation Code</th>
+            <th>Status</th>
+            <th>Created on</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>#ID</th>
+            <th>SKU</th>
+            <th>Activation Code</th>
+            <th>Status</th>
+            <th>Created on</th>
+            <th>Action</th>
+        </tr>
+    </tfoot>
+    <tbody>
+
+
+
+<?php
+ 
+//$activeCollection = $block->getCollection();
+
+if(!empty($_collection)) { $i=1;
+foreach ($_collection as $val) { ?>
+    <tr>
+        <td><center><?= $i ?></center></td>
+        <td><center><?= $val['sku'] ?></center></td>
+        <td><center><?= $val['activation_code'] ?></center></td>
+        <td><center><?= $val['status'] == 1 ? 'Available' : 'Sold'?></center></td>
+        <td><center><?= $val['created_on']?></center></td>
+
+        <td>
+            <center>
+                <form action="<?= $this->getUrl('menuitem/sample/delete', $paramsHere = array()) ?>" method="post">
+                    <input name="form_key" type="hidden" value="<?php /* @escapeNotVerified */ echo $FormKey->getFormKey() ?>" />
+                    <input type="hidden" name="code_id" value="<?= $val['id']?>">
+                    <a href="javascript:void(0);" class="del-button"  >Delete</a>
+                </form>
+            </center>
+        </td>
+        
+    </tr>
+<?php $i++; } } ?>
+
+    </tbody>
+</table>
+
+<script type="text/javascript">
+    require(['jquery', 'dataTables'], function ($) {
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+        
+         $(document).on("click",".del-button",function(){
+             var form = $(this).closest("form");
+             //console.log(form);
+             form.submit();
+        });
+
+    });
+</script>
+
+
+<script type="text/javascript">
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+ 
+   var dataForm = $('#importFrm');
+   dataForm.mage('validation', {});
+ 
+});
+</script>

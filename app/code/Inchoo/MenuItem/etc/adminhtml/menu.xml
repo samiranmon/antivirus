@@ -18,13 +18,13 @@
              resource="Inchoo_MenuItem::sold" 
              parent="Magento_Catalog::catalog" />
         
-<!--        <add id="Inchoo_MenuItem::sample" 
-             title="Export csv" 
+       <add id="Inchoo_MenuItem::importcsv" 
+             title="Import activation codes" 
              module="Inchoo_MenuItem" 
              sortOrder="102" 
-             action="menuitem/sample/exportcsv" 
-             resource="Inchoo_MenuItem::sample" 
-             parent="Magento_Catalog::catalog" />-->
+             action="menuitem/importcsv" 
+             resource="Inchoo_MenuItem::importcsv" 
+             parent="Magento_Catalog::catalog" />
  
     </menu>
 </config>
