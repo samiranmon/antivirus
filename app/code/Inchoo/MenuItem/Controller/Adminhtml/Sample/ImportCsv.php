@@ -42,8 +42,20 @@ class ImportCsv extends \Magento\Backend\App\Action {
                 
                 while (($line = fgetcsv($csvFile)) !== FALSE) {
                     
+                    //Select Data from table
+                    $unique_sql = "Select id FROM " . $themeTable." where activation_code='$line[1]'";
+                    $result = $connection->fetchAll($unique_sql);
+                    if(!empty($result)) {
+                        $message = 'Sorry! please import unique activation code';
+                        $this->_messageManager->addError($message);
+                        
+                        $resultRedirect = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);
+                        $resultRedirect->setPath('menuitem/importcsv/index');
+                        return $resultRedirect;
+                    }
+                    
                     $date = date('Y-m-d H:i:s');
-                    $sql = "INSERT INTO " . $themeTable . "(sku, activation_code, status, created_on) VALUES ('$line[0]', '$line[1]', 1, '$date')";
+                    $sql = "INSERT INTO " . $themeTable . "(sku, activation_code, price, status, created_on) VALUES ('$line[0]', '$line[1]', '$line[2]', 1, '$date')";
                     $connection->query($sql);
                 }
 

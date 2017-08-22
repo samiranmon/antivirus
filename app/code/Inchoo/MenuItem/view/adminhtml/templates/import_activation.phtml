@@ -24,6 +24,7 @@ $_collection = $connection->fetchAll("SELECT * FROM activation_code");
             <th>#ID</th>
             <th>SKU</th>
             <th>Activation Code</th>
+            <th>Price</th>
             <th>Status</th>
             <th>Created on</th>
             <th>Action</th>
@@ -34,6 +35,7 @@ $_collection = $connection->fetchAll("SELECT * FROM activation_code");
             <th>#ID</th>
             <th>SKU</th>
             <th>Activation Code</th>
+            <th>Price</th>
             <th>Status</th>
             <th>Created on</th>
             <th>Action</th>
@@ -53,7 +55,8 @@ foreach ($_collection as $val) { ?>
         <td><center><?= $i ?></center></td>
         <td><center><?= $val['sku'] ?></center></td>
         <td><center><?= $val['activation_code'] ?></center></td>
-        <td><center><?= $val['status'] == 1 ? 'Available' : 'Sold'?></center></td>
+        <td><center><?= round($val['price'],2) ?></center></td>
+        <td><center><?= $val['status'] == 1 ? 'Available' : 'Assign'?></center></td>
         <td><center><?= $val['created_on']?></center></td>
 
         <td>
