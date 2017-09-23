@@ -1,21 +1,64 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-<body>
-    <move element="logo" destination="header-wrapper"/>
-    <referenceContainer name="header.wrapper" remove="false" />
-    <referenceContainer name="header.wrapper" remove="false" />
-    <referenceContainer name="header.panel" remove="false" />
-    <referenceBlock name="top.search" remove="false" />
-    <!-- <referenceBlock name="catalog.compare.link" remove="false" /> -->
-    <referenceBlock name="catalog.topnav" remove="false"/>
-    <referenceBlock name="navigation.sections" remove="false"/>
-    <referenceContainer name="footer-container"  remove="false"/>
-    <referenceBlock name="top.links" remove="false" />
-    <referenceBlock name="top.links2" remove="false" />
-    <referenceBlock name="minicart" remove="false" />   
+    <body>
+        <move element="logo" destination="header-wrapper"/>
+        <referenceContainer name="header.wrapper" remove="false" />
+        <referenceContainer name="header.wrapper" remove="false" />
+        <referenceContainer name="header.panel" remove="false" />
+        <referenceBlock name="top.search" remove="false" />
+        <!-- <referenceBlock name="catalog.compare.link" remove="false" /> -->
+        <referenceBlock name="catalog.topnav" remove="false"/>
+        <referenceBlock name="navigation.sections" remove="false"/>
+        <referenceContainer name="footer-container"  remove="false"/>
+        <referenceBlock name="top.links" remove="false" />
+        <referenceBlock name="top.links2" remove="false" />
+        <referenceBlock name="minicart" remove="false" />   
+    
+        <referenceBlock name="checkout.root">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="checkout" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="steps" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="shipping-step" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="shippingAddress" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="shipping-address-fieldset" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                
+                                                                
+                                                               <item name="city" xsi:type="array">
+                                                                    <item name="visible" xsi:type="boolean">false</item>
+                                                                    <item name="validation" xsi:type="array">
+                                                                        <item name="validate-select" xsi:type="string">false</item>
+                                                                    </item>
+                                                                </item> 
+                                                                
+                                                                 
+                                                                
+                                                                
+                                                                
+                                                                
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
 
     
     
     
-</body>
+    </body>
 </page>

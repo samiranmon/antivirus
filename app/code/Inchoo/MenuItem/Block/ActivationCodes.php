@@ -23,7 +23,8 @@ class ActivationCodes extends \Magento\Framework\View\Element\Template {
         $collection->addAttributeToFilter(
                 [
                     //['attribute'=>'type_id','neq'=> 'simple'],
-                        ['attribute' => 'type_id', 'eq' => 'downloadable'],
+                    //['attribute' => 'type_id', 'eq' => 'downloadable'],
+                      ['attribute' => 'type_id', 'eq' => 'simple'],
                 //['attribute'=>'color','eq'=> 4] // Color filter
                 ]
         );
@@ -38,7 +39,8 @@ class ActivationCodes extends \Magento\Framework\View\Element\Template {
         $collection->addAttributeToFilter(
                 [
                     //['attribute'=>'type_id','neq'=> 'simple'],
-                        ['attribute' => 'type_id', 'eq' => 'downloadable'],
+                    //['attribute' => 'type_id', 'eq' => 'downloadable'],
+                      ['attribute' => 'type_id', 'eq' => 'simple'],
                 //['attribute'=>'color','eq'=> 4] // Color filter
                 ]
         );

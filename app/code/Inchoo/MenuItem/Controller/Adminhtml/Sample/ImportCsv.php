@@ -55,7 +55,7 @@ class ImportCsv extends \Magento\Backend\App\Action {
                     }
                     
                     $date = date('Y-m-d H:i:s');
-                    $sql = "INSERT INTO " . $themeTable . "(sku, activation_code, price, status, created_on) VALUES ('$line[0]', '$line[1]', '$line[2]', 1, '$date')";
+                    $sql = "INSERT INTO " . $themeTable . "(sku, activation_code, price, path, status, created_on) VALUES ('$line[0]', '$line[1]', '$line[2]', '$line[3]', 1, '$date')";
                     $connection->query($sql);
                 }
 
